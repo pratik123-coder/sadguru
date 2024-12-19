@@ -5,8 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import logo from "@/public/logo.png";
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
+  const path = usePathname();
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -33,7 +35,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex justify-end items-center px-6">
           <ul className="flex space-x-6 text-md font-semibold">
             {[
-              { name: "Courses", href: "#courses" },
+              { name: "Courses", href: "/courses" },
               { name: "Gallery", href: "#gallery" },
               { name: "About Us", href: "#about-us" },
               { name: "Contact Us", href: "#contact" },
@@ -75,6 +77,7 @@ const Navbar: React.FC = () => {
         transition={{ duration: 0.6, ease: "easeInOut" }}
         className="absolute top-0 left-6"
       >
+        <Link href="/">
         <Image
           src={logo}
           alt="Sadguru College Logo"
@@ -82,6 +85,7 @@ const Navbar: React.FC = () => {
           height={1000}
           width={1000}
         />
+        </Link>
       </motion.div>
     </motion.div>
   );

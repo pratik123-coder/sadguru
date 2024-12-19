@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full pt-28"
+      className="relative w-full"
     >
       {/* Main hero container with rounded corners */}
       <motion.div

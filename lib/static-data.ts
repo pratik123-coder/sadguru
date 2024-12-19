@@ -1,8 +1,9 @@
 import course from "@/public/course.png"
+import { StaticImageData } from 'next/image'
 export interface Course {
   id: string
   title: string
-  image: string
+  image: StaticImageData
   description: string
 }
 
