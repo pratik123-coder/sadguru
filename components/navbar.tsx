@@ -36,9 +36,9 @@ const Navbar: React.FC = () => {
           <ul className="flex space-x-6 text-md font-semibold">
             {[
               { name: "Courses", href: "/courses" },
-              { name: "Gallery", href: "#gallery" },
-              { name: "About Us", href: "#about-us" },
-              { name: "Contact Us", href: "#contact" },
+              { name: "Gallery", href: "/gallery" },
+              { name: "About Us", href: "/about" },
+              { name: "Contact Us", href: "/contact" },
             ].map((item) => (
               <motion.li
                 key={item.name}
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
               className="transition-transform duration-300"
             >
               <Link
-                href="#apply-now"
+                href="/admission"
                 className="bg-white font-montserrat text-black px-4 py-3 rounded-full hover:bg-black hover:text-white transition-colors duration-300 transform"
               >
                 Apply Now
