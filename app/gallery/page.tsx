@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { GalleryProps, GalleryLinks } from "./constants";
+import Image from 'next/image';
+import { GalleryLinks } from "./constants";
 
 const GalleryPage = () => {
-    const [image, setImage] = useState<string | null>(null);
+  const [image, setImage] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const handleImageModal = (img: string) => () => {
     setImage(img);
@@ -21,11 +22,13 @@ const GalleryPage = () => {
                 className="flex flex-col items-center"
                 onClick={handleImageModal(link.img)}
               >
-                <img
+                <Image
                   src={link.img}
                   alt={link.name}
                   className="h-auto mb-5 rounded-lg"
                   loading="lazy"
+                  width={500} // You need to provide width
+                  height={500} // You need to provide height
                 />
               </div>
             );
@@ -33,15 +36,16 @@ const GalleryPage = () => {
         </div>
       </div>
       <div
-        className={`${
-          isOpen ? "flex flex-col items-center justify-center" : "hidden"
-        } z-40 fixed top-0 left-0 w-full h-screen bg-black/90 pt-24`}
+        className={`${isOpen ? "flex flex-col items-center justify-center" : "hidden"
+          } z-40 fixed top-0 left-0 w-full h-screen bg-black/90 pt-24`}
       >
-        
-        {image && <img
+
+        {image && <Image
           src={image}
           alt={image}
           className="mb-5 rounded-lg object-contain h-[28rem] px-8"
+          width={500} // You need to provide width
+          height={500} // You need to provide height
         />}
         <div className="bg-red-600 text-white p-2 px-4 rounded-xl" onClick={() => setIsOpen(false)}>
           Close

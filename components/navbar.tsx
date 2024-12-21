@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import logo from "@/public/logo.png";
-import { usePathname } from "next/navigation";
+
 
 const Navbar: React.FC = () => {
-  const path = usePathname();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}

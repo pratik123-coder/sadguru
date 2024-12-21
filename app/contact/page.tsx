@@ -13,7 +13,7 @@ const validationSchema = z.object({
 });
 
 const ContactUsPage = () => {
-  const handleSubmit = (values: any, { resetForm }: any) => {
+  const handleSubmit = (values: { name: string; email: string; phone: string; message: string }, { resetForm }: { resetForm: () => void }) => {
     console.log("Form data submitted:", values);
     alert("Form submitted successfully!");
     resetForm();
@@ -124,6 +124,7 @@ const ContactUsPage = () => {
           whileHover={{ scale: 1.03 }}
         >
           <iframe
+            title="Google Maps Location"
             width="100%"
             height="270"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.636720758235!2d85.81634771159072!3d20.35662091044425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093cc3e1974b%3A0x85a345e1f4fcce86!2sKIIT%20Student%20Activity%20Center%20-%20KSAC!5e0!3m2!1sen!2sin!4v1689966822541!5m2!1sen!2sin"
