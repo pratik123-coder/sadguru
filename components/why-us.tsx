@@ -5,7 +5,7 @@ import { CountUpNumber } from './count-up-number'
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-[#1a237e] text-white py-16">
+    <section className="bg-[#121855] text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
@@ -26,7 +26,7 @@ export function WhyChooseUs() {
               viewport={{ once: true }}
               className="text-white/90"
             >
-              Choose Sadguru College of Nursing and Allied Medical Sciences for paramedical courses because we provide exceptional education and practical training in collaboration with Sadguru Hospital. Our strong industry ties ensure excellent placement opportunities, preparing you for a successful future in the dynamic field of healthcare. Your success begins here.
+              Choose Sadguru College of Nursing and Allied Medical Sciences for your paramedical education. We offer excellent teaching and hands-on training in partnership with Sadguru Hospital. Our strong connections with the healthcare industry open doors to great career opportunities. Start your journey toward a successful future in healthcare with us.
             </motion.p>
           </motion.div>
 
