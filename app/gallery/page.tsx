@@ -14,7 +14,7 @@ const GalleryPage = () => {
     <>
       <div className="flex flex-col items-center justify-center overflow-hidden">
         <h1 className="text-[3rem] font-medium font-montserrat mt-16">Gallery</h1>
-        <div className="mt-8  lg:mx-40 mx-8 columns-1 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">
+        <div className="mt-8 lg:mx-40 mx-8 columns-1 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">
           {GalleryLinks.map((link) => {
             return (
               <div

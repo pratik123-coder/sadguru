@@ -5,8 +5,8 @@ import { CountUpNumber } from './count-up-number'
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-[#121855] text-white py-16">
-      <div className="container mx-auto px-4">
+    <section className="bg-[#0D1B40] text-white py-16">
+      <div className="container mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
