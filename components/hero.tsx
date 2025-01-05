@@ -37,16 +37,15 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="absolute bottom-12 right-12 max-w-md bg-[#1a237e] text-white p-8 rounded-lg"
+          className="absolute lg:bottom-20 lg:right-20 bottom-0 max-w-md bg-[#0D1B40] text-white p-8 py-12 rounded-lg space-y-4 shadow-2xl shadow-white/10"
         >
-          <h1 className="text-2xl font-bold mb-4">
+          <h1 className="text-2xl font-bold mb-4 font-montserrat">
             Sadguru College of Nursing & Allied Medical Science
           </h1>
           <a href="/about">
           <Button 
             variant="outline" 
-            className="text-black border-white hover:bg-white/10 hover:text-white"
-            
+            className="text-black border-white hover:bg-white/10 hover:text-white font-semibold"
           >
             More Details
           </Button>
