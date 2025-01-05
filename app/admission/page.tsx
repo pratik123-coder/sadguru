@@ -29,7 +29,7 @@ const admissionFormSchema = z.object({
     .number()
     .min(0, "Percentage must be at least 0")
     .max(100, "Percentage cannot exceed 100"),
-  interestedCourse: z.string().min(1, "Please select a course"),
+  interested: z.string().min(1, "Please select a "),
   address: z.string().min(1, "Address is required"),
 });
 
@@ -63,7 +63,7 @@ const AdmissionForm = () => {
           email: "",
           qualification: "",
           percentage: "",
-          interestedCourse: "",
+          interested: "",
           address: "",
         }}
         validationSchema={toFormikValidationSchema(admissionFormSchema)}
@@ -238,21 +238,32 @@ const AdmissionForm = () => {
 
             <div className="flex flex-col">
               <label className="font-medium text-gray-700">
-                Interested Course
+                Interested 
               </label>
               <Field
-                name="interestedCourse"
+                name="interested"
                 as="select"
                 className="border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
-                <option value="">Select Course</option>
-                <option value="Engineering">Engineering</option>
-                <option value="Medical">Medical</option>
-                <option value="Arts">Arts</option>
+                <option value="">Select </option>
+                <option value="General Nursing">General Nursing</option>
+                <option value="B.Sc. Nursing">B.Sc. Nursing</option>
+                <option value="B.Sc. Anesthesia">B.Sc. Anesthesia</option>
+                <option value="B.Sc. Medical Laboratory Technology">B.Sc. Medical Laboratory Technology</option>
+                <option value="B.Sc. Medical Radiation Technology">B.Sc. Medical Radiation Technology</option>
+                <option value="B.Sc. Operation Theatre Technology">B.Sc. Operation Theatre Technology</option>
+                <option value="Diploma in Medical Lab">Diploma in Medical Lab</option>
+                <option value="Diploma in Medical Radiation">Diploma in Medical Radiation</option>
+                <option value="Diploma in Medical Radiation Therapy">Diploma in Medical Radiation Therapy</option>
+                <option value="Certified Cath Lab Technician">Certified Cath Lab Technician</option>
+                <option value="Certified Dialysis Technician">Certified Dialysis Technician</option>
+                <option value="Certified OT Technician">Certified OT Technician</option>
+                <option value="Certified Ward Technician">Certified Ward Technician</option>
+                <option value="Certified ECG Technician">Certified ECG Technician</option>
               </Field>
-              {errors.interestedCourse && touched.interestedCourse && (
+              {errors.interested && touched.interested && (
                 <span className="text-sm text-red-500">
-                  {errors.interestedCourse}
+                  {errors.interested}
                 </span>
               )}
             </div>

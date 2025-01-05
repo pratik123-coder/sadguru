@@ -15,6 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Menu, X } from 'lucide-react'
+import { usePathname } from "next/navigation"
 
 const courses = {
   "Nursing Program": [
@@ -43,7 +44,7 @@ const courses = {
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const path = usePathname();
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -81,11 +82,11 @@ const Navbar: React.FC = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Link href="/about" legacyBehavior passHref>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} ${path === '/about' ? 'bg-accent text-accent-foreground cursor-not-allowed' : ''}`}>
                       About Us
                     </NavigationMenuLink>
-                  </Link>
+                    </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
@@ -109,7 +110,7 @@ const Navbar: React.FC = () => {
                               >
                                 <Link
                                   href={item.href}
-                                  className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-sm text-muted-foreground"
+                                  className={`block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors text-sm ${path === item.href ? 'bg-accent text-accent-foreground' : 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-muted-foreground'}`}
                                 >
                                   {item.name}
                                 </Link>
@@ -123,14 +124,14 @@ const Navbar: React.FC = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/gallery" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} ${path === '/gallery' ? 'bg-accent text-accent-foreground cursor-not-allowed' : ''}`}>
                       Gallery
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/contact" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={` ${navigationMenuTriggerStyle()} ${path === '/contact' ? 'bg-accent text-accent-foreground cursor-not-allowed' : ''}`}>
                       Contact Us
                     </NavigationMenuLink>
                   </Link>

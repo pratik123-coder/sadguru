@@ -42,12 +42,15 @@ const Hero: React.FC = () => {
           <h1 className="text-2xl font-bold mb-4">
             Sadguru College of Nursing & Allied Medical Science
           </h1>
+          <a href="/about">
           <Button 
             variant="outline" 
-            className="text-white border-white hover:bg-white/10"
+            className="text-black border-white hover:bg-white/10 hover:text-white"
+            
           >
             More Details
           </Button>
+          </a>
         </motion.div>
       </motion.div>
 

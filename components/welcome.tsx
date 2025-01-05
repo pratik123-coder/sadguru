@@ -28,7 +28,7 @@ export function WelcomeSection() {
         <p className="text-black/80 leading-relaxed text-sm md:text-base ">
         At Sadguru College of Allied Medical Sciences (SCAMS) and Sadguru College of Nursing (SCN), Jagatpur, Cuttack, we are dedicated in shaping the future of healthcare education. Established in 2023, our mission is to provide top-quality nursing and allied medical sciences training to prepare skilled professionals who are committed to serve the community. With a team of highly qualified faculty from renowned institutions, we ensure excellence in teaching and learning. Our student-friendly environment fosters growth, innovation, and hands-on experience, making us one of the best choices for nursing and paramedical education in Cuttack. Join us in our journey to create a healthier tomorrow.
           <a
-            href="#learn-more"
+            href="/contact"
             className="text-black font-semibold underline ml-2"
           >
             LEARN MORE

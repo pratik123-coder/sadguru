@@ -17,11 +17,17 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Rakesh",
-    course: "DMRT",
+    course: "DMLT",
     image: "/placeholder.svg",
     quote: "Studying DMLT At Sadguru College Has Been A Game-Changer. The Comprehensive Curriculum, Supportive Professors, And Hands-On Lab Experience Have Prepared Me For A Successful Career In Medical Laboratory Technology."
+  },
+  {
+    id: 2,
+    name: "Rakesh",
+    course: "DMRT",
+    image: "/placeholder.svg",
+    quote: "Sadguru College's DMRT program provided the perfect launchpad for my career in radiography. The institution's commitment to excellence and well-equipped labs made all the difference. I highly recommend it!"
   }
-  // Add more testimonials as needed
 ]
 
 export function Testimonials() {
@@ -40,7 +46,7 @@ export function Testimonials() {
           </h2>
         </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}

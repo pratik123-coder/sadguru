@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { usePathname } from "next/navigation"
 
 const footerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -16,28 +17,29 @@ const footerVariants = {
   }
 }
 
+
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 }
 
 const courses = [
-  "General Nursing and Midwifery (GNM)",
-  "B.Sc Medical Laboratory Technology(BMLT)",
-  "B.Sc Medical Imaging Technology(BMIT)",
-  "B.Sc Operation Theatre Technology(BOTT)",
-  "B.Sc Anesthesia",
-  "Diploma in Medical Laboratory Technology(DMLT)",
-  "Diploma in Medical Radiation Technology(DMRT)",
-  "Diploma in Operation Theatre Technology",
-  "Certified ECG Lab",
-  "Certified OT Technician(COT)",
-  "Certified Medical Lab Technician(CMLT)",
-  "Certified CT Technician(CCT)",
-  "Certified X-Ray Technician(CXT)",
-  "Certified Blood Technician(CBT)",
-  "Nursing"
-]
+    { name: "General Nursing", href: "/courses/general-nursing" },
+    { name: "B.Sc. Nursing", href: "/courses/nursing" },
+    { name: "B.Sc. Anesthesia", href: "/courses/anesthesia" },
+    { name: "B.Sc. Medical Laboratory Technology", href: "/courses/medical-lab" },
+    { name: "B.Sc. Medical Radiation Technology", href: "/courses/medical-radiation" },
+    { name: "B.Sc. Operation Theatre Technology", href: "/courses/ot" },
+    { name: "Diploma in Medical Lab", href: "/courses/diploma-med-lab" },
+    { name: "Diploma in Medical Radiation", href: "/courses/diploma-med-radiation" },
+    { name: "Diploma in Medical Radiation Therapy", href: "/courses/diploma-med-rad-theryapy" },
+    { name: "Certified Cath Lab Technician", href: "/courses/certified-cath-lab-technician" },
+    { name: "Certified Dialysis Technician", href: "/courses/certified-dialysis-technician" },
+    { name: "Certified OT Technician", href: "/courses/certified-ot-technician" },
+    { name: "Certified Ward Technician", href: "/courses/certified-ward-technician" },
+    { name: "Certified ECG Technician", href: "/courses/ecg-technician" },
+  ]
 
 const quickLinks = [
   { name: "Admission", href: "/admission" },
@@ -46,6 +48,7 @@ const quickLinks = [
 ]
 
 export function Footer() {
+  const path = usePathname();
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
       <motion.div 
@@ -90,10 +93,10 @@ export function Footer() {
             <h3 className="text-xl font-semibold">Courses</h3>
             <ul className="space-y-3 text-sm text-gray-400">
               {courses.map((course) => (
-                <li key={course}>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    {course}
-                  </Link>
+                <li key={course.name}>
+                    <Link href={course.href} className={`hover:text-white transition-colors ${path === course.href ? 'text-yellow-500' : ''}`}>
+                    {course.name}
+                    </Link>
                 </li>
               ))}
             </ul>
