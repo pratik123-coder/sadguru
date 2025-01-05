@@ -127,7 +127,7 @@ const ContactUsPage = () => {
             title="Google Maps Location"
             width="100%"
             height="270"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.636720758235!2d85.81634771159072!3d20.35662091044425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093cc3e1974b%3A0x85a345e1f4fcce86!2sKIIT%20Student%20Activity%20Center%20-%20KSAC!5e0!3m2!1sen!2sin!4v1689966822541!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.2669350478345!2d85.93013127501618!3d20.495280781023986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a196dcc75ad37e3%3A0xe3b3a93b93f091fd!2sSadguru%20Medical%20College(%20Paramedical%20College%20in%20Cuttack%20%2COdisha)!5e0!3m2!1sen!2sin!4v1735985412960!5m2!1sen!2sin"
             allowFullScreen
             style={{ borderRadius: "30px" }}
           ></iframe>

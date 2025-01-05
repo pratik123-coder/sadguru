@@ -41,7 +41,7 @@ const MessageBox = ({ img, description, desgn, name, id }: MessageBoxProps) => {
             </div>
           </motion.div>
           <motion.div
-            className="font-montserrat text-center lg:text-left overflow-scroll lg:h-auto h-96"
+            className="font-montserrat text-center lg:text-left max-lg:overflow-scroll lg:h-auto h-96"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
