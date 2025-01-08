@@ -4,6 +4,8 @@ import { Formik, Form, Field } from "formik";
 import { z } from "zod";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 import { motion } from "framer-motion";
+import toast from "react-hot-toast";
+import { admissionEntry } from "@/action/admission.action";
 
 // Validation Schema using Zod
 const admissionFormSchema = z.object({
@@ -17,7 +19,7 @@ const admissionFormSchema = z.object({
     .string()
     .min(10, "WhatsApp number must be at least 10 digits")
     .max(10, "WhatsApp number must be 10 digits"),
-  gender: z.enum(["Male", "Female", "Prefer Not to Say"], {
+  gender: z.enum(["Male", "Female", "Other"], {
     required_error: "Please select your gender",
   }),
   category: z.enum(["General", "OBC", "SC / ST"], {
@@ -67,9 +69,35 @@ const AdmissionForm = () => {
           address: "",
         }}
         validationSchema={toFormikValidationSchema(admissionFormSchema)}
-        onSubmit={(values, {resetForm}) => {
-          console.log("Form Data:", values);
-          resetForm()
+        onSubmit={async (values, { resetForm }) => {
+          const submissionData = {
+            name: values.name,
+            parent_name: values.parentName, 
+            phone: values.phone,
+            whatsapp: values.whatsapp,
+            gender: values.gender as "Male" | "Female" | "Other", 
+            category: values.category as "General" | "OBC" | "SC_ST", 
+            email: values.email,
+            qualification: values.qualification,
+            percentage: parseFloat(values.percentage.toString()), 
+            interested: values.interested,
+            address: values.address,
+          };
+        
+          try {
+            const res = await admissionEntry(submissionData);
+            if (!res.success) {
+              console.error(res.message);
+              throw new Error(res.message);
+            }
+            toast.dismiss();
+            toast.success("Form submitted successfully!");
+            resetForm();
+          } catch (err) {
+            console.error(err);
+            toast.dismiss();
+            toast.error("Failed to submit form. Please try again later.");
+          }
         }}
       >
         {({ errors, touched }) => (
@@ -147,7 +175,7 @@ const AdmissionForm = () => {
                   <Field
                     type="radio"
                     name="gender"
-                    value="Prefer Not to Say"
+                    value="Other"
                     className="form-radio"
                   />
                   <span>Prefer Not to Say</span>

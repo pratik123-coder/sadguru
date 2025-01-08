@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 import { z } from "zod";
+import toast from "react-hot-toast";
+import { contactEntry } from "@/action/contact.action";
 
 const validationSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -13,11 +15,30 @@ const validationSchema = z.object({
 });
 
 const ContactUsPage = () => {
-  const handleSubmit = (values: { name: string; email: string; phone: string; message: string }, { resetForm }: { resetForm: () => void }) => {
+  const handleSubmit = async (values: { name: string; email: string; phone: string; message: string }, { resetForm }: { resetForm: () => void }) => {
     console.log("Form data submitted:", values);
-    alert("Form submitted successfully!");
-    resetForm();
-  };
+      const submissionData = {
+        name: values.name,
+        phone: values.phone,
+        email: values.email,
+        message: values.message,
+      };
+    
+      try {
+        const res = await contactEntry(submissionData);
+        if (!res.success) {
+          console.error(res.message);
+          throw new Error(res.message);
+        }
+        toast.dismiss();
+        toast.success("Form submitted successfully!");
+        resetForm();
+      } catch (err) {
+        console.error(err);
+        toast.dismiss();
+        toast.error("Failed to submit form. Please try again later.");
+      }
+    }
   return (
     <>
     <h1 className="text-center text-[3rem] mt-16 font-medium">Contact Us</h1>
