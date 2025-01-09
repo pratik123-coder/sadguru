@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const CDT = () => (
   <CoursePage
     title="Certified Dialysis Technician (CDT)"
-    heroImage="/placeholder-cdt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/eb7vlblqgqk6ddkymazz"
     description="Are you passionate about patient care and looking for a career in renal therapy and diagnostics? The Certified Dialysis Technician (CDT) Course at Sadguru College of Nursing & Allied Medical Sciences, located in Jagatpur, Cuttack, offers you the ideal platform to build a future in healthcare."
     duration="1 Year"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

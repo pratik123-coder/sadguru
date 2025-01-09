@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const BMRT = () => (
   <CoursePage
     title="B.Sc. in Medical Radiation Technology (BMRT)"
-    heroImage="/placeholder-bmrt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8"
     description="Are you looking for the best place to pursue a B.Sc. in Medical Radiation Technology (BMRT) in Jagatpur, Cuttack, or across Odisha? Sadguru College of Nursing & Allied Medical Sciences is your destination for high-quality education in healthcare. With experienced faculty, modern facilities, and practical training, we prepare students for successful careers in medical imaging and radiation technology."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board with a minimum of 50% marks (45% for PH, 40% for SC/ST)."

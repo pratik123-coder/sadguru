@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const DRTT = () => (
   <CoursePage
     title="Diploma in Radiation Therapy Technology (DRTT)"
-    heroImage="/placeholder-drtt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/gxfzpka9kxhagnjlvany"
     description="Step into the world of advanced cancer care with a Diploma in Radiation Therapy Technology (DRTT) at Sadguru College of Nursing & Allied Medical Sciences in Jagatpur, Cuttack. This specialized program equips students with the skills and knowledge needed for a successful career in radiation therapy, a vital field in cancer treatment."
     duration="2 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

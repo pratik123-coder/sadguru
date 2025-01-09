@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const CCLT = () => (
   <CoursePage
     title="Certified Cath Lab Technician Course (CCLT)"
-    heroImage="/placeholder-cclt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/fkyqpfwyxtusonv3mifz"
     description="Are you passionate about cardiovascular health and looking for a career in cardiac diagnostics and treatment? The Certified Cath Lab Technician Course (CCLT) at Sadguru College of Nursing & Allied Medical Sciences, located in Jagatpur, Cuttack, offers the perfect opportunity to enter this specialized and rewarding field."
     duration="2 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

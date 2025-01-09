@@ -4,8 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
-import heroImg from "@/public/hero.png"
-import placeholder from "@/public/hero-place.png"
+import heroImg from "@/public/hero.png";
 
 const Hero: React.FC = () => {
   return (
@@ -71,11 +70,11 @@ const Hero: React.FC = () => {
         className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 -mt-4 pt-6"
       >
         {[
-          "Best Medical Courses",
-          "Job Placements",
-          "Practical Training",
-          "Sadguru Hospital",
-        ].map((title) => (
+          {title:"Best Medical Courses",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1"},
+          {title:"Job Placements",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8"},
+          {title:"Practical Training",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md"},
+          {title:"Mentorship & Guidance",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold"}
+        ].map(({title, image}) => (
           <motion.div
             key={title}
             variants={{
@@ -85,7 +84,7 @@ const Hero: React.FC = () => {
             className="relative h-48 rounded-xl overflow-hidden"
           >
             <Image
-              src={placeholder}
+              src={image}
               alt={title}
               fill
               className="object-cover"

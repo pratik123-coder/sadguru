@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const BOTT = () => (
   <CoursePage
     title="B.Sc. in Operation Theatre Technology (BOTT)"
-    heroImage="/placeholder-bott.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1"
     description="Looking to pursue a career in Operation Theatre Technology? Sadguru College of Nursing & Allied Medical Sciences in Jagatpur, Cuttack, is the perfect place to start. With top-tier education, state-of-the-art facilities, and experienced faculty, we prepare students for a successful career in managing and operating surgical theatres."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board with at least 50% marks (45% for PH and 40% for SC/ST)."

@@ -10,30 +10,30 @@ import {
 } from "@/components/ui/carousel"
 import { useState, useEffect } from "react"
 import { CarouselArrow } from "./carousel-arrow"
-import lab1 from "@/public/lab.jpg"
+
 
 const courses = {
   "Nursing Program": [
-    { name: "General Nursing", href: "/courses/general-nursing" }
+    { name: "General Nursing", href: "/courses/general-nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold" }
   ],
   "Bachelor of Science Programs": [
-    { name: "B.Sc. Nursing", href: "/courses/nursing" },
-    { name: "B.Sc. Anesthesia", href: "/courses/anesthesia" },
-    { name: "B.Sc. Medical Laboratory Technology", href: "/courses/medical-lab" },
-    { name: "B.Sc. Medical Radiation Technology", href: "/courses/medical-radiation" },
-    { name: "B.Sc. Operation Theatre Technology", href: "/courses/ot" },
+    { name: "B.Sc. Nursing", href: "/courses/nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/bvbplyho014wcxfzlenf" },
+    { name: "B.Sc. Anesthesia", href: "/courses/anesthesia", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/vc7etafdgcx79ylwlxfw" },
+    { name: "B.Sc. Medical Laboratory Technology", href: "/courses/medical-lab", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pqqnmegtoy1litpza8of" },
+    { name: "B.Sc. Medical Radiation Technology", href: "/courses/medical-radiation", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8" },
+    { name: "B.Sc. Operation Theatre Technology", href: "/courses/ot", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1" },
   ],
   "Diploma Programs": [
-    { name: "Diploma in Medical Lab", href: "/courses/diploma-med-lab" },
-    { name: "Diploma in Medical Radiation", href: "/courses/diploma-med-radiation" },
-    { name: "Diploma in Medical Radiation Therapy", href: "/courses/diploma-med-rad-theryapy" },
+    { name: "Diploma in Medical Lab", href: "/courses/diploma-med-lab",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/iehx8qji1m8f3anktv2r" },
+    { name: "Diploma in Medical Radiation", href: "/courses/diploma-med-radiation", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/rzhl9dejj86wwgeqaoxj" },
+    { name: "Diploma in Medical Radiation Therapy", href: "/courses/diploma-med-rad-theryapy", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/gxfzpka9kxhagnjlvany" },
   ],
   "Certification Programs": [
-    { name: "Certified Cath Lab Technician", href: "/courses/certified-cath-lab-technician" },
-    { name: "Certified Dialysis Technician", href: "/courses/certified-dialysis-technician" },
-    { name: "Certified OT Technician", href: "/courses/certified-ot-technician" },
-    { name: "Certified Ward Technician", href: "/courses/certified-ward-technician" },
-    { name: "Certified ECG Technician", href: "/courses/ecg-technician" },
+    { name: "Certified Cath Lab Technician", href: "/courses/certified-cath-lab-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/fkyqpfwyxtusonv3mifz" },
+    { name: "Certified Dialysis Technician", href: "/courses/certified-dialysis-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/eb7vlblqgqk6ddkymazz" },
+    { name: "Certified OT Technician", href: "/courses/certified-ot-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pybrosgel7yw9ljevg4k" },
+    { name: "Certified Ward Technician", href: "/courses/certified-ward-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md" },
+    { name: "Certified ECG Technician", href: "/courses/ecg-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/zuywspmif3b9u1c8hbub" },
   ],
 }
 
@@ -84,13 +84,13 @@ export function CoursesSection() {
                     <CardContent className="p-0">
                       <div className="relative aspect-[3/4] w-full h-96 rounded-xl overflow-hidden">
                         <Image
-                          src={`/placeholder.svg?height=400&width=300&text=${encodeURIComponent(course.name)}`}
+                          src={course.image}
                           alt={course.name}
                           fill
                           className="object-cover"
                         />
                       </div>
-                      <h3 className="font-medium p-4 text-sm">
+                      <h3 className="font-medium p-4 text-md text-center">
                         {course.name}
                       </h3>
                     </CardContent>
@@ -111,7 +111,7 @@ export function CoursesSection() {
                 <div className="space-y-4">
                   <div className="relative h-full rounded-xl overflow-hidden">
                     <Image
-                      src={lab1}
+                      src={"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/a3ycsduzoz7busu2blty"}
                       alt="Sadguru Hospital Building"
                       fill
                       className="object-cover"

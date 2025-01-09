@@ -5,7 +5,7 @@ import React from 'react';
 const BAT = () => (
   <CoursePage
     title="B.Sc. in Anesthesia Technology (BAT)"
-    heroImage="/placeholder-bat.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/vc7etafdgcx79ylwlxfw"
     description="Are you looking to build a career in anesthesia technology in Cuttack, Odisha, or nearby areas? Sadguru College of Nursing & Allied Medical Sciences offers an excellent B.Sc. in Anesthesia Technology program. With experienced faculty, modern infrastructure, and practical exposure, our program is designed to prepare students for a successful career in this critical field of healthcare."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board with at least 50% marks (45% for PH, 40% for SC/ST)."

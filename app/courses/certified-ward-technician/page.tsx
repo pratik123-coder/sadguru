@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const CWT = () => (
   <CoursePage
     title="Certified Ward Technician (CWT)"
-    heroImage="/placeholder-cwt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md"
     description="Looking for a career in healthcare? The Certified Ward Technician (CWT) Course at Sadguru College of Nursing & Allied Medical Sciences, located in Jagatpur, Cuttack, is your gateway to a fulfilling profession. This program provides students with the essential skills and knowledge to support healthcare professionals and contribute to patient care in hospitals, clinics, and other medical facilities."
     duration="6 Months"
     qualification="Pass in 10th"

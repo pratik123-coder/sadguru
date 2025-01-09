@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import Image from "next/image";
 
 interface Testimonial {
   id: number;
@@ -18,50 +19,19 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "Rakesh",
     course: "DMRT",
-    image: "@/public/windows.svg",
+    image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/htfxeonar23lwgm865dv",
     quote:
       "Studying DMLT At Sadguru College Has Been A Game-Changer. The Comprehensive Curriculum, Supportive Professors, And Hands-On Lab Experience Have Prepared Me For A Successful Career In Medical Laboratory Technology.",
   },
   {
     id: 2,
-    name: "Anjali",
-    course: "BSc Nursing",
-    image: "/placeholder.svg",
-    quote:
-      "The BSc Nursing Program At Sadguru College Has Equipped Me With The Knowledge And Skills Needed To Excel In The Healthcare Industry. The Faculty And Facilities Are Top-Notch.",
-  },
-  {
-    id: 3,
-    name: "Vikram",
-    course: "Pharmacy",
-    image: "/placeholder.svg",
-    quote:
-      "Sadguru College's Pharmacy Program Is Outstanding. The Curriculum Is Well-Structured, And The Practical Training Has Given Me The Confidence To Pursue A Career In Pharmacy.",
-  },
-  {
-    id: 4,
-    name: "Priya",
-    course: "DMLT",
-    image: "/placeholder.svg",
-    quote:
-      "The DMLT Program At Sadguru College Has Provided Me With In-Depth Knowledge And Practical Skills. The Faculty's Expertise And The State-Of-The-Art Labs Have Made My Learning Experience Exceptional.",
-  },
-  {
-    id: 5,
     name: "Amit",
     course: "BPT",
-    image: "/placeholder.svg",
+    image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/dqxt83kldd0oaoutogaj",
     quote:
       "Sadguru College's BPT Program Is Comprehensive And Well-Structured. The Hands-On Training And Supportive Faculty Have Prepared Me For A Rewarding Career In Physiotherapy.",
   },
-  {
-    id: 6,
-    name: "Sneha",
-    course: "BSc Nursing",
-    image: "/placeholder.svg",
-    quote:
-      "The BSc Nursing Program At Sadguru College Has Been An Incredible Journey. The Knowledge And Skills I've Gained Here Are Invaluable, And The Faculty's Support Has Been Unwavering.",
-  },
+
   // Add more testimonials as needed
 ];
 
@@ -94,12 +64,12 @@ export function Testimonials() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="relative w-16 h-16 flex items-center justify-center rounded-full overflow-hidden bg-black">
-                      {/* <Image
+                      <Image
                         src={testimonial.image}
                         alt={testimonial.name}
                         fill
                         className="object-cover"
-                        /> */}
+                        />
                       <svg
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

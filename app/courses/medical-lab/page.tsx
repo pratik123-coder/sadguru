@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const BMLT = () => (
   <CoursePage
     title="B.Sc. in Medical Laboratory Technology (BMLT)"
-    heroImage="/placeholder-bmlt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/iehx8qji1m8f3anktv2r"
     description="Looking to pursue a B.Sc. in Medical Laboratory Technology (BMLT) in Jagatpur, Cuttack, Bhubaneswar, or anywhere in Odisha? Sadguru College of Nursing & Allied Medical Sciences offers a comprehensive BMLT program designed to equip students with the skills and knowledge needed to excel in diagnostic healthcare. With experienced faculty, advanced labs, and hands-on training, we ensure a strong foundation for a successful career in medical laboratory technology."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics as one of the subjects from a recognized board with a minimum of 50% marks (45% for PH, 40% for SC/ST)."

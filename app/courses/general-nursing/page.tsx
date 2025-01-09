@@ -5,7 +5,7 @@ import React from 'react';
 const GNM = () => (
   <CoursePage
     title="General Nursing and Midwifery (GNM)"
-    heroImage="/placeholder-gnm.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold"
     description="Looking to pursue a General Nursing and Midwifery (GNM) course in Jagatpur, Cuttack, or anywhere in Odisha? Sadguru College of Nursing & Allied Medical Sciences offers a comprehensive GNM program designed to shape skilled and compassionate healthcare professionals. With experienced faculty, modern facilities, and hands-on training, we provide the perfect platform to launch your career in nursing and midwifery."
     duration="3 Years"
     qualification="Pass in 10th and +2 (any stream) or equivalent from a recognized board with a minimum of 40% marks (35% for SC/ST)."

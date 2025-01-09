@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const DMLT = () => (
   <CoursePage
     title="Diploma in Medical Laboratory Technology (DMLT)"
-    heroImage="/placeholder-dmlt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pqqnmegtoy1litpza8of"
     description="Kickstart your journey in the healthcare industry with a Diploma in Medical Laboratory Technology (DMLT) at Sadguru College of Nursing & Allied Medical Sciences in Jagatpur, Cuttack. Our program equips you with essential skills in laboratory techniques, diagnostics, and patient care, preparing you for a fulfilling career in medical diagnostics."
     duration="2 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

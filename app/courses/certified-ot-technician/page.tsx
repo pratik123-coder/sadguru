@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const COTT = () => (
   <CoursePage
     title="Certified OT Technician Course (COTT)"
-    heroImage="/placeholder-cott.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pybrosgel7yw9ljevg4k"
     description="If you're passionate about healthcare and surgical assistance, the Certified OT Technician Course (COTT) at Sadguru College of Nursing & Allied Medical Sciences, located in Jagatpur, Cuttack, is an excellent choice. This course equips students with the skills and knowledge needed to excel as operating theatre (OT) technicians, playing a crucial role in surgical care and patient safety."
     duration="1 Year"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

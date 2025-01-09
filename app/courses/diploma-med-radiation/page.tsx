@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const DMRT = () => (
   <CoursePage
     title="Diploma in Medical Radiation Technology (DMRT)"
-    heroImage="/placeholder-dmrt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/rzhl9dejj86wwgeqaoxj"
     description="Begin your journey into the advanced field of medical imaging with a Diploma in Medical Radiation Technology (DMRT) at Sadguru College of Nursing & Allied Medical Sciences, Jagatpur, Cuttack. This program equips you with essential skills in radiographic procedures, patient care, and radiation safety, preparing you for a fulfilling career in medical radiography and imaging technology."
     duration="2 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."

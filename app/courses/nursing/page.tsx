@@ -3,7 +3,7 @@ import CoursePage from "@/components/course-page";
 const BScNursing = () => (
   <CoursePage
     title="B.Sc in Nursing"
-    heroImage="/placeholder-bsc-nursing.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/bvbplyho014wcxfzlenf"
     description="Looking for a top-quality B.Sc in Nursing program in Jagatpur, Cuttack, or anywhere in Odisha? Sadguru College of Nursing & Allied Sciences is the ideal choice."
     duration="4 Years"
     qualification="Pass in +2 Science with PCB (45% marks for General category, 40% for SC/ST) from a recognized board."

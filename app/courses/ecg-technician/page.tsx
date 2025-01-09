@@ -4,7 +4,7 @@ import CoursePage from '@/components/course-page';
 const CECGT = () => (
   <CoursePage
     title="Certified ECG Technician Course (CECGT)"
-    heroImage="/placeholder-cecgt.svg"
+    heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/zuywspmif3b9u1c8hbub"
     description="If you’re passionate about diagnostics and patient care, the Certified ECG Technician Course (CECGT) at Sadguru College of Nursing & Allied Medical Sciences in Jagatpur, Cuttack, is the perfect choice. This course provides the essential knowledge and practical skills needed to excel in the field of electrocardiography, an integral part of modern healthcare."
     duration="6 Months"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board."
