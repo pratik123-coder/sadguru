@@ -23,15 +23,10 @@ export function WelcomeSection() {
       >
         <h2 className="text-xl md:text-lg font-bold">Welcome to</h2>
         <h3 className="text-lg md:text-[2rem] font-serif leading-snug">
-          Sadguru College of Nursing & <br/> Allied Medical Science
+          Sadguru College of Nursing & <br /> Allied Medical Science
         </h3>
         <p className="text-black/80 leading-relaxed text-sm md:text-base ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. 
+          At Sadguru College of Allied Medical Sciences (SCAMS) and Sadguru College of Nursing (SCN), Jagatpur, Cuttack, we are dedicated in shaping the future of healthcare education. Established in 2023, our mission is to provide top-quality nursing and allied medical sciences training to prepare skilled professionals who are committed to serve the community. With a team of highly qualified faculty from renowned institutions, we ensure excellence in teaching and learning. Our student-friendly environment fosters growth, innovation, and hands-on experience, making us one of the best choices for nursing and paramedical education in Cuttack. Join us in our journey to create a healthier tomorrow.
           <a
             href="/about"
             className="text-black font-semibold underline ml-2"
