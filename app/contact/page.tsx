@@ -163,7 +163,7 @@ const ContactUsPage = () => {
           <div className="flex items-center space-x-2">
             <span>📍</span>
             <p className="text-lg font-medium">
-              Sadguru Hospital Campus, Jagatpur, Cuttack, Odisha
+              Sadguru Hospital Campus, Khairapola, Immamnagar, Jagatpur, Cuttack, Odisha
             </p>
           </div>
           <div className="flex items-center space-x-2">

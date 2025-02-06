@@ -69,7 +69,7 @@ export function Footer() {
             </h2>
             <div className="text-gray-400 space-y-2">
               <p>Sadguru Hospital</p>
-              <p>Campus, Jagatpur,</p>
+              <p>Khairapola, Immamnagar, Jagatpur</p>
               <p>Cuttack, Odisha - 754021</p>
             </div>
             <div className="flex space-x-4">
