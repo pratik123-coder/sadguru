@@ -22,7 +22,7 @@ const courses = {
   ],
   "Bachelor of Science Programs": [
     { name: "B.Sc. Nursing", href: "/courses/nursing" },
-    { name: "B.Sc. Anesthesia", href: "/courses/anesthesia" },
+    { name: "B.Sc. Anesthesia Technology", href: "/courses/anesthesia" },
     { name: "B.Sc. Medical Laboratory Technology", href: "/courses/medical-lab" },
     { name: "B.Sc. Medical Radiation Technology", href: "/courses/medical-radiation" },
     { name: "B.Sc. Operation Theatre Technology", href: "/courses/ot" },
@@ -52,8 +52,9 @@ const Navbar: React.FC = () => {
       className="fixed top-0 left-0 w-full z-50"
     >
       {/* Blue Section */}
-      <div className="w-full bg-[#0D1B40] text-white py-3 h-14 flex items-center">
-        <div className="container mx-auto flex justify-end space-x-6 px-4 lg:px-6">
+      <div className="w-full bg-[#0D1B40] text-white py-3 h-14 flex items-center ">
+        <div className="container mx-auto flex justify-end space-x-6 px-4 lg:px-6 ">
+          <div className="w-3/4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -62,6 +63,7 @@ const Navbar: React.FC = () => {
           >
             Sadguru College of Nursing & Allied Medical Science
           </motion.div>
+          </div>
         </div>
       </div>
 

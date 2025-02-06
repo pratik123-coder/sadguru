@@ -25,20 +25,20 @@ const itemVariants = {
 }
 
 const courses = [
-    { name: "General Nursing", href: "/courses/general-nursing" },
+    { name: "General Nursing And Midwifery (GNM)", href: "/courses/general-nursing" },
     { name: "B.Sc. Nursing", href: "/courses/nursing" },
-    { name: "B.Sc. Anesthesia", href: "/courses/anesthesia" },
-    { name: "B.Sc. Medical Laboratory Technology", href: "/courses/medical-lab" },
-    { name: "B.Sc. Medical Radiation Technology", href: "/courses/medical-radiation" },
-    { name: "B.Sc. Operation Theatre Technology", href: "/courses/ot" },
-    { name: "Diploma in Medical Lab", href: "/courses/diploma-med-lab" },
-    { name: "Diploma in Medical Radiation", href: "/courses/diploma-med-radiation" },
-    { name: "Diploma in Medical Radiation Therapy", href: "/courses/diploma-med-rad-theryapy" },
-    { name: "Certified Cath Lab Technician", href: "/courses/certified-cath-lab-technician" },
-    { name: "Certified Dialysis Technician", href: "/courses/certified-dialysis-technician" },
-    { name: "Certified OT Technician", href: "/courses/certified-ot-technician" },
-    { name: "Certified Ward Technician", href: "/courses/certified-ward-technician" },
-    { name: "Certified ECG Technician", href: "/courses/ecg-technician" },
+    { name: "B.Sc. Anesthesia Technology (BAT)", href: "/courses/anesthesia" },
+    { name: "B.Sc. Medical Laboratory Technology (BMLT)", href: "/courses/medical-lab" },
+    { name: "B.Sc. Medical Radiation Technology (BMRT)", href: "/courses/medical-radiation" },
+    { name: "B.Sc. Operation Theatre Technology (BOTT)", href: "/courses/ot" },
+    { name: "Diploma in Medical Labratory Technology (DMLT)", href: "/courses/diploma-med-lab" },
+    { name: "Diploma in Medical Radiation Technology (DMRT)", href: "/courses/diploma-med-radiation" },
+    { name: "Diploma in Medical Radiation Therapy Technology (DRTT)", href: "/courses/diploma-med-rad-theryapy" },
+    { name: "Certified Cath Lab Technician (CCLT)", href: "/courses/certified-cath-lab-technician" },
+    { name: "Certified Dialysis Technician (CDT)", href: "/courses/certified-dialysis-technician" },
+    { name: "Certified OT Technician (COTT)", href: "/courses/certified-ot-technician" },
+    { name: "Certified Ward Technician (CWT)", href: "/courses/certified-ward-technician" },
+    { name: "Certified ECG Technician (CECGT)", href: "/courses/ecg-technician" },
   ]
 
 const quickLinks = [
@@ -126,13 +126,13 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+917328000505" className="hover:text-white transition-colors">
-                  +91 7328000505
+                <a href="tel:+917328000504" className="hover:text-white transition-colors">
+                  +91 7328000504
                 </a>
               </li>
               <li>
-                <a href="mailto:sadguruhc2013@gmail.com" className="hover:text-white transition-colors">
-                  sadguruhc2013@gmail.com
+                <a href="mailto:sadguruhet2013@gmail.com" className="hover:text-white transition-colors">
+                  sadguruhet2013@gmail.com
                 </a>
               </li>
             </ul>
@@ -148,18 +148,11 @@ export function Footer() {
         transition={{ delay: 0.5, duration: 0.5 }}
       >
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Sadguru College of Nursing & Allied Medical Science. All Rights Reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors mr-4">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-            </div>
+            
           </div>
         </div>
       </motion.div>
