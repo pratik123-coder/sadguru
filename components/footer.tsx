@@ -68,7 +68,6 @@ export function Footer() {
               Science
             </h2>
             <div className="text-gray-400 space-y-2">
-              <p>Sadguru Hospital</p>
               <p>Khairapola, Immamnagar, Jagatpur</p>
               <p>Cuttack, Odisha - 754021</p>
             </div>
