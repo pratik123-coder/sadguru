@@ -17,19 +17,19 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Rakesh",
-    course: "DMRT",
+    name: "Digambar",
+    course: "DMLT",
     image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/htfxeonar23lwgm865dv",
     quote:
       "Studying DMLT At Sadguru College Has Been A Game-Changer. The Comprehensive Curriculum, Supportive Professors, And Hands-On Lab Experience Have Prepared Me For A Successful Career In Medical Laboratory Technology.",
   },
   {
     id: 2,
-    name: "Amit",
-    course: "BPT",
+    name: "Rakesh",
+    course: "DMRT",
     image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/dqxt83kldd0oaoutogaj",
     quote:
-      "Sadguru College's BPT Program Is Comprehensive And Well-Structured. The Hands-On Training And Supportive Faculty Have Prepared Me For A Rewarding Career In Physiotherapy.",
+      "Sadguru College's DMRT program provided the perfect launchpad for my career in radiography. The institution's commitment to excellence and well-equipped labs made all the difference. I highly recommend it!",
   },
 
   // Add more testimonials as needed
