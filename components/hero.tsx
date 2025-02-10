@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
-import heroImg from "@/public/hero.png";
+import heroImg from "@/public/hero.jpg";
 
 const Hero: React.FC = () => {
   return (
