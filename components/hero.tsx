@@ -5,6 +5,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import heroImg from "@/public/hero.jpg";
+import { CoursesSection } from "./courses";
+import NotificationBanner from "./marquee-notificaiton";
 
 const Hero: React.FC = () => {
   return (
@@ -51,7 +53,10 @@ const Hero: React.FC = () => {
           </a>
         </motion.div>
       </motion.div>
-
+      <div className="pb-5">
+      <NotificationBanner text="*Sadguru College of Nursing and Allied Medical Science.. Admission Open for Academic Year 2024-2025*" />
+      </div>
+      <CoursesSection />
       {/* Four cards below hero */}
       <motion.div
         initial="hidden"
