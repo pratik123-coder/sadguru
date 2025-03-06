@@ -15,6 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Menu, X } from 'lucide-react'
+import NotificationBanner from "./marquee-notificaiton"
 
 const courses = {
   "Nursing Program": [
@@ -202,7 +203,7 @@ const Navbar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
+      <NotificationBanner text="*Sadguru College of Nursing and Allied Medical Science.. Admission Open for Academic Year 2024-2025*" />
       {/* Logo Section */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -220,6 +221,9 @@ const Navbar: React.FC = () => {
           />
         </Link>
       </motion.div>
+
+            
+
     </motion.div>
   )
 }

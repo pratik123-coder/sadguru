@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import heroImg from "@/public/hero.jpg";
 import { CoursesSection } from "./courses";
-import NotificationBanner from "./marquee-notificaiton";
+
 
 const Hero: React.FC = () => {
   return (
@@ -53,9 +53,7 @@ const Hero: React.FC = () => {
           </a>
         </motion.div>
       </motion.div>
-      <div className="pb-5">
-      <NotificationBanner text="*Sadguru College of Nursing and Allied Medical Science.. Admission Open for Academic Year 2024-2025*" />
-      </div>
+      
       <CoursesSection />
       {/* Four cards below hero */}
       <motion.div
@@ -76,7 +74,7 @@ const Hero: React.FC = () => {
       >
         {[
           {title:"Best Medical Courses",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1"},
-          {title:"Job Placements",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8"},
+          {title:"Placement Assistance",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8"},
           {title:"Practical Training",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md"},
           {title:"Mentorship & Guidance",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold"}
         ].map(({title, image}) => (
