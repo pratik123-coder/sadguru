@@ -23,12 +23,11 @@ const Hero: React.FC = () => {
         transition={{ duration: 0.6, ease: "easeInOut" }}
         className="relative h-[700px] rounded-xl overflow-hidden mx-4 my-4 border-2 border-gray-200"
       >
-        {/* Hero image with overlay */}
         <Image
           src={heroImg}
           alt="Medical professional"
           fill
-          className="object-cover"
+          className="object-cover brightness-110"
           priority
         />
         <div className="absolute inset-0 bg-black/20" />

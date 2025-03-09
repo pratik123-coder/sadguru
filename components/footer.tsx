@@ -72,16 +72,13 @@ export function Footer() {
               <p>Cuttack, Odisha - 754021</p>
             </div>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.facebook.com/share/12GTSswq12n/" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/sadgurumedicalcollege?igsh=NHJtanJxaTFjcjZk" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/company/sadguru-college-of-nursing-allied-medical-sciences/?viewAsMember=true" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </Link>
             </div>
