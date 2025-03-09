@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Linkedin } from 'lucide-react'
 import { usePathname } from "next/navigation"
 
 const footerVariants = {
