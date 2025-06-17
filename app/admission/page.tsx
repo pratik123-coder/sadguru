@@ -274,20 +274,20 @@ const AdmissionForm = () => {
                 className="border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
                 <option value="">Select </option>
-                <option value="General Nursing">General Nursing</option>
+                <option value="General Nursing">General Nursing and Midwifery (GNM)</option>
                 <option value="B.Sc. Nursing">B.Sc. Nursing</option>
-                <option value="B.Sc. Anesthesia">B.Sc. Anesthesia</option>
-                <option value="B.Sc. Medical Laboratory Technology">B.Sc. Medical Laboratory Technology</option>
-                <option value="B.Sc. Medical Radiation Technology">B.Sc. Medical Radiation Technology</option>
-                <option value="B.Sc. Operation Theatre Technology">B.Sc. Operation Theatre Technology</option>
+                <option value="P.B. B.Sc. Nursing">P.B. B.Sc. Nursing</option>
+                <option value="Bachelor Medical Laboratory Technology">B.Sc. Medical Laboratory Technology</option>
+                <option value="Bachelor Medical Radiation Technology">B.Sc. Medical Radiation Technology</option>
+                {/* <option value="B.Sc. Operation Theatre Technology">B.Sc. Operation Theatre Technology</option> */}
                 <option value="Diploma in Medical Lab">Diploma in Medical Lab</option>
                 <option value="Diploma in Medical Radiation">Diploma in Medical Radiation</option>
                 <option value="Diploma in Medical Radiation Therapy">Diploma in Medical Radiation Therapy</option>
-                <option value="Certified Cath Lab Technician">Certified Cath Lab Technician</option>
+                {/* <option value="Certified Cath Lab Technician">Certified Cath Lab Technician</option> */}
                 <option value="Certified Dialysis Technician">Certified Dialysis Technician</option>
                 <option value="Certified OT Technician">Certified OT Technician</option>
-                <option value="Certified Ward Technician">Certified Ward Technician</option>
-                <option value="Certified ECG Technician">Certified ECG Technician</option>
+                {/* <option value="Certified Ward Technician">Certified Ward Technician</option>
+                <option value="Certified ECG Technician">Certified ECG Technician</option> */}
               </Field>
               {errors.interested && touched.interested && (
                 <span className="text-sm text-red-500">

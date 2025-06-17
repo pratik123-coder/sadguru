@@ -3,14 +3,14 @@ import CoursePage from '@/components/course-page';
 
 const BMLT = () => (
   <CoursePage
-    title="B.Sc. in Medical Laboratory Technology (BMLT)"
+    title="Bachelor in Medical Laboratory Technology (BMLT)"
     heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/iehx8qji1m8f3anktv2r"
-    description="Looking to pursue a B.Sc. in Medical Laboratory Technology (BMLT) in Jagatpur, Cuttack, Bhubaneswar, or anywhere in Odisha? Sadguru College of Nursing & Allied Medical Sciences offers a comprehensive BMLT program designed to equip students with the skills and knowledge needed to excel in diagnostic healthcare. With experienced faculty, advanced labs, and hands-on training, we ensure a strong foundation for a successful career in medical laboratory technology."
+    description="Looking to pursue a Bachelor in Medical Laboratory Technology (BMLT) in Jagatpur, Cuttack, Bhubaneswar, or anywhere in Odisha? Sadguru College of Nursing & Allied Medical Sciences offers a comprehensive BMLT program designed to equip students with the skills and knowledge needed to excel in diagnostic healthcare. With experienced faculty, advanced labs, and hands-on training, we ensure a strong foundation for a successful career in medical laboratory technology."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics as one of the subjects from a recognized board with a minimum of 50% marks (45% for PH, 40% for SC/ST)."
     location="Sadguru College of Nursing & Allied Medical Sciences is located in Jagatpur, Cuttack, offering students access to advanced learning facilities and practical exposure."
     whatIs={{
-      title: "What is B.Sc. in Medical Laboratory Technology?",
+      title: "What is Bachelor in Medical Laboratory Technology?",
       content: [
         "The BMLT program is a three-year undergraduate course that prepares students for essential roles in the healthcare system. Medical lab technologists are key contributors to patient diagnosis and treatment, working behind the scenes in diagnostic and research laboratories.",
         "Students in the BMLT program learn:",

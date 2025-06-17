@@ -19,26 +19,27 @@ import NotificationBanner from "./marquee-notificaiton"
 
 const courses = {
   "Nursing Program": [
-    { name: "General Nursing And Midwifery (GNM)", href: "/courses/general-nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold" }
-  ],
-  "Bachelor of Science Programs": [
+    { name: "General Nursing And Midwifery (GNM)", href: "/courses/general-nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/k1jfsikrtvol1galeold" },
     { name: "B.Sc. Nursing", href: "/courses/nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/bvbplyho014wcxfzlenf" },
-    { name: "B.Sc. Anesthesia Technology (BAT)", href: "/courses/anesthesia", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/vc7etafdgcx79ylwlxfw" },
-    { name: "B.Sc. Medical Laboratory Technology (BMLT)", href: "/courses/medical-lab", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pqqnmegtoy1litpza8of" },
-    { name: "B.Sc. Medical Radiation Technology (BMRT)", href: "/courses/medical-radiation", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8" },
-    { name: "B.Sc. Operation Theatre Technology (BOTT)", href: "/courses/ot", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1" },
+    { name: "Post Basic B.Sc Nursing", href: "/courses/post-basic-nursing", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/bvbplyho014wcxfzlenf" }
   ],
-  "Diploma Programs": [
-    { name: "Diploma in Medical Labratory Technology (DMLT)", href: "/courses/diploma-med-lab",image:"https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/iehx8qji1m8f3anktv2r" },
+  "Degree Programme": [
+    // { name: "B.Sc. Anesthesia Technology (BAT)", href: "/courses/anesthesia", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/vc7etafdgcx79ylwlxfw" },
+    { name: "Bachelor in Medical Laboratory Technology (BMLT)", href: "/courses/medical-lab", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pqqnmegtoy1litpza8of" },
+    { name: "Bachelor in Medical Radiation Technology (BMRT)", href: "/courses/medical-radiation", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8" },
+    // { name: "B.Sc. Operation Theatre Technology (BOTT)", href: "/courses/ot", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/tzm9g1hxoswrlm4v6oh1" },
+  ],
+  "Diploma Programme": [
+    { name: "Diploma in Medical Labratory Technology (DMLT)", href: "/courses/diploma-med-lab", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/iehx8qji1m8f3anktv2r" },
     { name: "Diploma in Medical Radiation Technology (DMRT)", href: "/courses/diploma-med-radiation", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/rzhl9dejj86wwgeqaoxj" },
     { name: "Diploma in Medical Radiation Therapy Technology (DRTT)", href: "/courses/diploma-med-rad-theryapy", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/gxfzpka9kxhagnjlvany" },
   ],
-  "Certification Programs": [
-    { name: "Certified Cath Lab Technician (CCLT)", href: "/courses/certified-cath-lab-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/fkyqpfwyxtusonv3mifz" },
+  "Certification Programme": [
+    // { name: "Certified Cath Lab Technician (CCLT)", href: "/courses/certified-cath-lab-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/fkyqpfwyxtusonv3mifz" },
     { name: "Certified Dialysis Technician (CDT)", href: "/courses/certified-dialysis-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/eb7vlblqgqk6ddkymazz" },
     { name: "Certified OT Technician (COTT)", href: "/courses/certified-ot-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/pybrosgel7yw9ljevg4k" },
-    { name: "Certified Ward Technician (CWT)", href: "/courses/certified-ward-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md" },
-    { name: "Certified ECG Technician (CECGT)", href: "/courses/ecg-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/zuywspmif3b9u1c8hbub" },
+    // { name: "Certified Ward Technician (CWT)", href: "/courses/certified-ward-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/kqwvjqkzitporajtd2md" },
+    // { name: "Certified ECG Technician (CECGT)", href: "/courses/ecg-technician", image: "https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/zuywspmif3b9u1c8hbub" },
   ],
 }
 
@@ -56,14 +57,14 @@ const Navbar: React.FC = () => {
       <div className="w-full bg-[#0D1B40] text-white py-3 h-14 flex items-center ">
         <div className="container mx-auto flex justify-end space-x-6 px-4 lg:px-6 ">
           <div className="w-3/4">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-sm md:text-lg lg:text-2xl text-right"
-          >
-            Sadguru College of Nursing & Allied Medical Science
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="font-serif text-sm md:text-lg lg:text-2xl text-right"
+            >
+              Sadguru College of Nursing & Allied Medical Science
+            </motion.div>
           </div>
         </div>
       </div>
@@ -203,7 +204,7 @@ const Navbar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <NotificationBanner text="*Sadguru College of Nursing and Allied Medical Science.. Admission Open for Academic Year 2024-2025*" />
+      <NotificationBanner text="*Admission Open for Academic Year - 2025*" />
       {/* Logo Section */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -222,7 +223,7 @@ const Navbar: React.FC = () => {
         </Link>
       </motion.div>
 
-            
+
 
     </motion.div>
   )

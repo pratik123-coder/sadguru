@@ -6,7 +6,7 @@ const BScNursing = () => (
     heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/bvbplyho014wcxfzlenf"
     description="Looking for a top-quality B.Sc in Nursing program in Jagatpur, Cuttack, or anywhere in Odisha? Sadguru College of Nursing & Allied Sciences is the ideal choice."
     duration="4 Years"
-    qualification="Pass in +2 Science with PCB (45% marks for General category, 40% for SC/ST) from a recognized board."
+    qualification="OJEE / Pass in +2 Science with PCB (45% marks for General category, 40% for SC/ST) from a recognized board."
     location="Sadguru College offers exceptional education, experienced faculty, and state-of-the-art facilities, preparing students for a successful career in healthcare."
     whatIs={{
       title: "What is B.Sc in Nursing?",

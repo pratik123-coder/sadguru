@@ -11,8 +11,8 @@ interface NotificationBannerProps {
 }
 
 export default function NotificationBanner({
-  text = "*Sadguru College of Nursing and Allied Medical Science.. Admission Open for Academic Year 2025-2026*",
-  speed = "slow",
+  text = "*Admission Open for Academic Year - 2025*",
+  speed = "fast",
   backgroundColor = "bg-gradient-to-r from-[#0D1B40] to-[#040509] text-white",
   textColor = "text-primary-foreground",
 }: NotificationBannerProps) {

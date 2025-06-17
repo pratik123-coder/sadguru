@@ -27,18 +27,19 @@ const itemVariants = {
 const courses = [
     { name: "General Nursing And Midwifery (GNM)", href: "/courses/general-nursing" },
     { name: "B.Sc. Nursing", href: "/courses/nursing" },
-    { name: "B.Sc. Anesthesia Technology (BAT)", href: "/courses/anesthesia" },
-    { name: "B.Sc. Medical Laboratory Technology (BMLT)", href: "/courses/medical-lab" },
-    { name: "B.Sc. Medical Radiation Technology (BMRT)", href: "/courses/medical-radiation" },
-    { name: "B.Sc. Operation Theatre Technology (BOTT)", href: "/courses/ot" },
+    { name: "Post Basic B.Sc Nursing", href: "/courses/post-basic-nursing"},
+    // { name: "B.Sc. Anesthesia Technology (BAT)", href: "/courses/anesthesia" },
+    { name: "Bachelor in Medical Laboratory Technology (BMLT)", href: "/courses/medical-lab" },
+    { name: "Bachelor in Medical Radiation Technology (BMRT)", href: "/courses/medical-radiation" },
+    // { name: "B.Sc. Operation Theatre Technology (BOTT)", href: "/courses/ot" },
     { name: "Diploma in Medical Labratory Technology (DMLT)", href: "/courses/diploma-med-lab" },
     { name: "Diploma in Medical Radiation Technology (DMRT)", href: "/courses/diploma-med-radiation" },
     { name: "Diploma in Medical Radiation Therapy Technology (DRTT)", href: "/courses/diploma-med-rad-theryapy" },
-    { name: "Certified Cath Lab Technician (CCLT)", href: "/courses/certified-cath-lab-technician" },
+    // { name: "Certified Cath Lab Technician (CCLT)", href: "/courses/certified-cath-lab-technician" },
     { name: "Certified Dialysis Technician (CDT)", href: "/courses/certified-dialysis-technician" },
     { name: "Certified OT Technician (COTT)", href: "/courses/certified-ot-technician" },
-    { name: "Certified Ward Technician (CWT)", href: "/courses/certified-ward-technician" },
-    { name: "Certified ECG Technician (CECGT)", href: "/courses/ecg-technician" },
+    // { name: "Certified Ward Technician (CWT)", href: "/courses/certified-ward-technician" },
+    // { name: "Certified ECG Technician (CECGT)", href: "/courses/ecg-technician" },
   ]
 
 const quickLinks = [

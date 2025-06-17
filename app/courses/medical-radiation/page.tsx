@@ -3,16 +3,16 @@ import CoursePage from '@/components/course-page';
 
 const BMRT = () => (
   <CoursePage
-    title="B.Sc. in Medical Radiation Technology (BMRT)"
+    title="Bachelor in Medical Radiation Technology (BMRT)"
     heroImage="https://res.cloudinary.com/dajq9hekb/image/upload/f_auto,q_auto/oyy68fplqyjq4jafnhd8"
-    description="Are you looking for the best place to pursue a B.Sc. in Medical Radiation Technology (BMRT) in Jagatpur, Cuttack, or across Odisha? Sadguru College of Nursing & Allied Medical Sciences is your destination for high-quality education in healthcare. With experienced faculty, modern facilities, and practical training, we prepare students for successful careers in medical imaging and radiation technology."
+    description="Are you looking for the best place to pursue a Bachelor in Medical Radiation Technology (BMRT) in Jagatpur, Cuttack, or across Odisha? Sadguru College of Nursing & Allied Medical Sciences is your destination for high-quality education in healthcare. With experienced faculty, modern facilities, and practical training, we prepare students for successful careers in medical imaging and radiation technology."
     duration="3 Years"
     qualification="Pass in +2 Science with PCB and/or Mathematics from a recognized board with a minimum of 50% marks (45% for PH, 40% for SC/ST)."
     location="Sadguru College of Nursing & Allied Medical Sciences, located in Jagatpur, Cuttack, offers a comprehensive BMRT program with access to modern imaging equipment and clinical training facilities."
     whatIs={{
-      title: "What is B.Sc. in Medical Radiation Technology?",
+      title: "What is Bachelor in Medical Radiation Technology?",
       content: [
-        "A B.Sc. in Medical Radiation Technology (BMRT) is a three-year undergraduate program that equips students with the skills to work with advanced medical imaging equipment and contribute to diagnosing and treating various medical conditions.",
+        "A Bachelor in Medical Radiation Technology (BMRT) is a three-year undergraduate program that equips students with the skills to work with advanced medical imaging equipment and contribute to diagnosing and treating various medical conditions.",
         "Students gain expertise in:",
         "• Operating X-ray, CT scan, MRI, and other imaging equipment",
         "• Radiation therapy techniques",
