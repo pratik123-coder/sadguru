@@ -13,7 +13,7 @@ interface NotificationBannerProps {
 export default function NotificationBanner({
   text = "*Admission Open for Academic Year - 2025*",
   speed = "fast",
-  backgroundColor = "bg-gradient-to-r from-[#0D1B40] to-[#040509] text-white",
+  backgroundColor = "bg-red-600 text-white",
   textColor = "text-primary-foreground",
 }: NotificationBannerProps) {
   const containerRef = useRef<HTMLDivElement>(null)

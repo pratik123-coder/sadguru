@@ -30,12 +30,38 @@ export default function DatabaseViewer() {
     setSelectedTable(tableName);
     setError(null);
     try {
-      const data = await getTableData(tableName);
-      setTableData(data.map(row => ({
+      const rawData: unknown = await getTableData(tableName);
+
+      let flatData: TableData[] = [];
+
+      if (
+        tableName === "Admission" &&
+        typeof rawData === "object" &&
+        rawData !== null &&
+        !Array.isArray(rawData)
+      ) {
+        // it's grouped object
+        const groupedData = rawData as Record<string, any[]>;
+        for (const group in groupedData) {
+          flatData.push(...groupedData[group]);
+        }
+      } else if (Array.isArray(rawData)) {
+        flatData = rawData;
+      }
+
+      const formatted = flatData.map((row: any) => ({
         ...row,
-        createdAt: 'createdAt' in row && row.createdAt ? row.createdAt.toISOString() : null,
-        updatedAt: 'updatedAt' in row && row.updatedAt ? row.updatedAt.toISOString() : null,
-      })));
+        createdAt:
+          "createdAt" in row && row.createdAt
+            ? new Date(row.createdAt).toISOString()
+            : null,
+        updatedAt:
+          "updatedAt" in row && row.updatedAt
+            ? new Date(row.updatedAt).toISOString()
+            : null,
+      }));
+
+      setTableData(formatted);
     } catch (error) {
       console.error("Error fetching table data:", error);
       setTableData([]);
@@ -74,7 +100,7 @@ export default function DatabaseViewer() {
               <TableRow key={index}>
                 {Object.entries(row).map(([key, value]) => (
                   <TableCell key={`${index}-${key}`}>
-                    {typeof value === "object"
+                    {typeof value === "object" && value !== null
                       ? JSON.stringify(value)
                       : String(value)}
                   </TableCell>
@@ -87,4 +113,3 @@ export default function DatabaseViewer() {
     </div>
   );
 }
-
