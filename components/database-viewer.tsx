@@ -21,43 +21,43 @@ import { getTableData } from "@/action/db.action";
 
 type TableData = Record<string, string | number | boolean | null>;
 
+function isGroupedData(data: unknown): data is Record<string, TableData[]> {
+  return typeof data === "object" && data !== null && !Array.isArray(data);
+}
+
 export default function DatabaseViewer() {
   const [selectedTable, setSelectedTable] = useState<string>("");
   const [tableData, setTableData] = useState<TableData[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleTableSelect = async (tableName: string) => {
     setSelectedTable(tableName);
     setError(null);
+    setIsLoading(true);
+
     try {
       const rawData: unknown = await getTableData(tableName);
 
       let flatData: TableData[] = [];
 
-      if (
-        tableName === "Admission" &&
-        typeof rawData === "object" &&
-        rawData !== null &&
-        !Array.isArray(rawData)
-      ) {
-        // it's grouped object
-        const groupedData = rawData as Record<string, any[]>;
-        for (const group in groupedData) {
-          flatData.push(...groupedData[group]);
+      if (tableName === "Admission" && isGroupedData(rawData)) {
+        for (const group in rawData) {
+          flatData.push(...rawData[group]);
         }
       } else if (Array.isArray(rawData)) {
-        flatData = rawData;
+        flatData = rawData as TableData[];
       }
 
-      const formatted = flatData.map((row: any) => ({
+      const formatted = flatData.map((row: TableData) => ({
         ...row,
         createdAt:
           "createdAt" in row && row.createdAt
-            ? new Date(row.createdAt).toISOString()
+            ? new Date(row.createdAt as string).toISOString()
             : null,
         updatedAt:
           "updatedAt" in row && row.updatedAt
-            ? new Date(row.updatedAt).toISOString()
+            ? new Date(row.updatedAt as string).toISOString()
             : null,
       }));
 
@@ -66,6 +66,8 @@ export default function DatabaseViewer() {
       console.error("Error fetching table data:", error);
       setTableData([]);
       setError("Failed to fetch table data. Please try again.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -84,7 +86,12 @@ export default function DatabaseViewer() {
         </SelectContent>
       </Select>
 
+      {isLoading && <p className="text-gray-500">Loading...</p>}
       {error && <p className="text-red-500">{error}</p>}
+
+      {selectedTable && !isLoading && tableData.length === 0 && (
+        <p className="text-gray-500">No data available for {selectedTable}.</p>
+      )}
 
       {selectedTable && tableData.length > 0 && (
         <Table>
@@ -100,9 +107,13 @@ export default function DatabaseViewer() {
               <TableRow key={index}>
                 {Object.entries(row).map(([key, value]) => (
                   <TableCell key={`${index}-${key}`}>
-                    {typeof value === "object" && value !== null
-                      ? JSON.stringify(value)
-                      : String(value)}
+                    {typeof value === "object" && value !== null ? (
+                      <pre className="whitespace-pre-wrap text-xs">
+                        {JSON.stringify(value, null, 2)}
+                      </pre>
+                    ) : (
+                      String(value)
+                    )}
                   </TableCell>
                 ))}
               </TableRow>
