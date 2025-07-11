@@ -118,13 +118,13 @@ export function Footer() {
             <h3 className="text-xl font-semibold">Contact Us</h3>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a href="tel:+917328000505" className="hover:text-white transition-colors">
-                  +91 7328000505
+                <a href="tel:+917381000504" className="hover:text-white transition-colors">
+                  +91 7381000504
                 </a>
               </li>
               <li>
-                <a href="tel:+917328000504" className="hover:text-white transition-colors">
-                  +91 7328000504
+                <a href="tel:+917381000505" className="hover:text-white transition-colors">
+                  +91 7381000505
                 </a>
               </li>
               <li>
