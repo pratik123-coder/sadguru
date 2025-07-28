@@ -157,7 +157,7 @@ const ContactUsPage = () => {
           <div className="flex items-center space-x-2">
             <span>📞</span>
             <p className="text-lg font-medium">
-              +91 798100504 <br /> +91 798100505
+              +91 7381000504 <br /> +91 7381000505
             </p>
           </div>
           <div className="flex items-center space-x-2">

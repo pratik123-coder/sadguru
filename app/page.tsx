@@ -1,3 +1,4 @@
+import ContactUs from "@/components/contact-component";
 import Hero from "@/components/hero";
 
 import { Testimonials } from "@/components/testimonials";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       
       <WelcomeSection />
+      <ContactUs />
       <WhyChooseUs />
       <Testimonials />
     </div>

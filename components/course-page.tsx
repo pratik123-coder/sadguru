@@ -150,9 +150,9 @@ export default function CoursePage({
               required
             />
             <Input
-              type="email"
-              name="email"
-              placeholder="Email"
+              type="number"
+              name="Phone number"
+              placeholder="Phone Number"
               className="w-full px-4 py-2 border rounded-md"
               required
             />
